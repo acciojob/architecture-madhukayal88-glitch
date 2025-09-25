@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Architecture Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
 
+    .container {
+      width: 1100px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .imageContainer {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .imageContainer img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      padding: 10px;
+    }
+
+    td img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    td.text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Column widths */
+    td:first-child,
+    td:last-child {
+      width: 200px;
+    }
+
+    td.text {
+      width: 600px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container">
+    <h1>Architecture Showcase</h1>
+
+    <div class="imageContainer">
+      <img src="your-image-link.jpg" alt="Main Architecture Image">
+    </div>
+
+    <table>
+      <tr>
+        <td><img src="image1.jpg" alt="Architecture Left 1"></td>
+        <td class="text">
+          Modern architecture blends functionality with aesthetic appeal. It often features clean lines, open spaces, and innovative use of materials.
+        </td>
+        <td><img src="image2.jpg" alt="Architecture Right 1"></td>
+      </tr>
+      <tr>
+        <td><img src="image3.jpg" alt="Architecture Left 2"></td>
+        <td class="text">
+          Classical architecture draws inspiration from ancient Greek and Roman styles, emphasizing symmetry, columns, and ornate detailing.
+        </td>
+        <td><img src="image4.jpg" alt="Architecture Right 2"></td>
+      </tr>
+    </table>
+  </div>
 
 </body>
-
 </html>
